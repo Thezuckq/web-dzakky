@@ -1,3 +1,62 @@
 .App {
   text-align: center;
 }
+
+.header {
+  width: auto;
+  height: 50px;
+  position: relative;
+  padding: auto;
+  margin: 40px 60px 40px 60px;
+}
+
+.header-content {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.list-menu {
+  width: auto;
+  height: 50px;
+  float: right;
+  position: relative;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.menu-item {
+  float: right;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  display: block;
+  color: #666666;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  display: block;
+  color: #1C58F2;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+}

@@ -1,11 +1,11 @@
-import { Contact, Portofolio } from "../pages";
+import { Home, Contact, Portofolio } from "../pages";
 
 const routes = [
-  // {
-  //   path: '/about',
-  //   component: Profile,
-  //   isPublic: false,
-  // },
+  {
+    path: "/home",
+    component: Home,
+    isPublic: true,
+  },
   // {
   //   path: '/experiences',
   //   component: Contact,
@@ -26,11 +26,11 @@ const routes = [
     component: Contact,
     isPublic: true,
   },
-  //   {
-  //     path: '/',
-  //     component: About,
-  //     isPublic: true,
-  //   },
+  {
+    path: "/",
+    component: Home,
+    isPublic: true,
+  },
 ];
 
 export default routes;

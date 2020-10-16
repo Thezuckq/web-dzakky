@@ -3,21 +3,24 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const listMenu = [
-    "about",
-    "experiences",
-    "education",
-    "portofolio",
-    "contact",
+    "Contact",
+    "Portofolio",
+    "Education",
+    "Experiences",
+    "About",
+    "Home",
   ];
   return (
     <div className="header">
-      {listMenu.map((name) => {
-        return (
-          <Link to={`/${name}`} key={name}>
-            <div className="menu">{name}</div>
-          </Link>
-        );
-      })}
+      <div className="list-menu">
+        {listMenu.map((name) => {
+          return (
+            <Link to={`/${name}`} key={name}>
+              <div className="menu-item">{name}</div>
+            </Link>
+          );
+        })}
+      </div>
     </div>
   );
 };
