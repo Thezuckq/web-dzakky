@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import Header from "./header";
 import routes from "./config/routes";
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // const isUserAuthenticated = false;
 
@@ -22,29 +22,31 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Header />
-      <Switch>
-        {routes.map((route) => {
-          if (route.isPublic) {
-            return (
-              <Route
-                path={route.path}
-                component={route.component}
-                key={route.path}
-              />
-            );
-          }
-          // return (
-          //   <PrivateRoute
-          //     path={route.path}
-          //     component={route.component}
-          //     key={route.path}
-          //   />
-          // );
-        })}
-      </Switch>
-    </BrowserRouter>
+    <div className="main-container">
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          {routes.map((route) => {
+            if (route.isPublic) {
+              return (
+                <Route
+                  path={route.path}
+                  component={route.component}
+                  key={route.path}
+                />
+              );
+            }
+            // return (
+            //   <PrivateRoute
+            //     path={route.path}
+            //     component={route.component}
+            //     key={route.path}
+            //   />
+            // );
+          })}
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 };
 

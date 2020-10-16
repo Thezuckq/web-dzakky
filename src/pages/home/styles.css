@@ -1,0 +1,138 @@
+
+.col-1 {
+  column-count: 1;
+}
+
+.con-profile {
+  width: auto;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: auto;
+  padding-left: auto;
+
+}
+
+.content-profile {
+  padding: 40px 120px 40px 120px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  display: block;
+  color: #333333;
+  text-align: left;
+  align-items: center;
+  text-decoration: none;
+  margin: 0px;
+}
+
+.res-profile {
+  max-width: 100%;
+  height: auto;
+  float: left;
+  padding-right: 60px;
+}
+
+.button-profile {
+    width: auto;
+    height: auto;
+    padding: 16px 24px 16px 24px;
+    margin-right: 16px;
+    border-radius: 40px;
+    border: 2px #666666 solid;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .button-profile:hover {
+    width: auto;
+    height: auto;
+    padding: 16px 24px 16px 24px;
+    border-radius: 40px;
+    border: 2px #1C58F2 solid;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .text-button {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    display: block;
+    color: #333333;
+    text-align: left;
+    text-decoration: none;
+    margin: 0px;
+  }
+  
+  .text-button:hover {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    display: block;
+    color: #1C58F2;
+    text-align: left;
+    text-decoration: none;
+    margin: 0px;
+  }
+
+.col-2 {
+    column-count: 2;
+    column-width: 400px;
+    column-gap: 120px;
+    padding: 40px 120px 40px 120px;
+    height: 725px;
+    column-fill: auto;
+}
+
+@media (min-width: 1363px) {
+  .col-2 {
+      column-count: 2;
+      column-width: 400px;
+      column-gap: 120px;
+      padding: 40px 120px 40px 120px;
+      height: 725px;
+      column-fill: auto;
+  }
+}
+
+@media (max-width: 1363px) {
+  .col-2 {
+      column-count: 1;
+      padding: 40px 120px 40px 120px;
+      column-fill: auto;
+  }
+}
+
+.content-project {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  display: block;
+  color: #333333;
+  text-align: left;
+  align-items: center;
+  text-decoration: none;
+  margin: 0px;
+}
+
+.text-project {
+  margin: 0px;
+}
+
+.heading1-subsection {
+  margin: 0px 0px 32px 0px;
+  color: #1C58F2;
+}
+
+.text-exp {
+  font-weight: 400;
+}
