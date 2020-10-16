@@ -1,14 +1,51 @@
-import React from 'react';
+import React, { Component } from "react";
+import "./App.css";
+import Header from "./header";
+import routes from "./config/routes";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import './App.css';
+// const isUserAuthenticated = false;
 
-function App() {
+// const PrivateRoute = ({ component: Component, ...rest}) => {
+//   return (
+//     <Route
+//       {...rest}
+//       render={() =>{
+//         if (isUserAuthenticated) {
+//           return <Component />;
+//         }
+//         return <Redirect to="Login" />
+//       }}
+//     />
+//   );
+// };
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>My First Heading</h1>
-      <p>My first paragraph.</p>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Switch>
+        {routes.map((route) => {
+          if (route.isPublic) {
+            return (
+              <Route
+                path={route.path}
+                component={route.component}
+                key={route.path}
+              />
+            );
+          }
+          // return (
+          //   <PrivateRoute
+          //     path={route.path}
+          //     component={route.component}
+          //     key={route.path}
+          //   />
+          // );
+        })}
+      </Switch>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
