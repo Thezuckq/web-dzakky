@@ -1,8 +1,9 @@
+/* eslint-disable */
 import React from "react";
 import "./App.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./header";
 import routes from "./config/routes";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // const isUserAuthenticated = false;
 
@@ -27,6 +28,7 @@ const App = () => {
         <Header />
         <Switch>
           {routes.map((route) => {
+            // eslint-disable-line
             if (route.isPublic) {
               return (
                 <Route
