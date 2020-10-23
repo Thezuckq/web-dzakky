@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import "./styles.css";
 import { fotoProfil } from "../../assets";
@@ -94,6 +95,14 @@ const Home = () => {
             </p>
             <p />
           </div>
+        </div>
+      </div>
+      {/* Project & Experiences */}
+
+      {/* Project & Experiences */}
+      <div id="project-section" className="con-project">
+        <div className="col-1">
+          <p>text</p>
         </div>
       </div>
       {/* Project & Experiences */}
