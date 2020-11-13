@@ -1,0 +1,18 @@
+.cont {
+    column-count: 1;
+    margin: 0px 40px 0px 40px;
+  }
+
+.card {
+  position: relative;
+  width: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 40px;
+  background: #1C58F2;
+}
+
+.card-content {
+    padding: 20px;
+    color: #ffffff;
+}

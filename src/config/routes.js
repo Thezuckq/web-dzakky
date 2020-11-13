@@ -1,4 +1,4 @@
-import { Home, Contact, Portofolio } from "../pages";
+import { Home, Contact, Portofolio, InfoCorona } from "../pages";
 
 const routes = [
   {
@@ -19,6 +19,11 @@ const routes = [
   {
     path: "/portofolio",
     component: Portofolio,
+    isPublic: true,
+  },
+  {
+    path: "/infoCorona",
+    component: InfoCorona,
     isPublic: true,
   },
   {

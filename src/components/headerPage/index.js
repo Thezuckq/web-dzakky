@@ -5,7 +5,7 @@ const Header = () => {
   const listMenu = [
     "Contact",
     "Portofolio",
-    "Education",
+    "infoCorona",
     "Experiences",
     "About",
     "Home",

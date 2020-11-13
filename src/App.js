@@ -2,7 +2,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Header from "./header";
+import { HeaderPage } from './components';
 import routes from "./config/routes";
 
 // const isUserAuthenticated = false;
@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div className="main-container">
       <BrowserRouter>
-        <Header />
+        <HeaderPage />
         <Switch>
           {routes.map((route) => {
             // eslint-disable-line
